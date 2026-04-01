@@ -1,14 +1,25 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
 env/
 venv/
 .venv/
 .env
 
+# Poetry
+poetry.lock
+
 # Jupyter
 .ipynb_checkpoints/
-*.nbconvert.ipynb
+*.ipynb
+
+# IDE
+.idea/
+.vscode/
+*.iml
 
 # Data & Models
 data/
