@@ -1,38 +1,66 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
 *.so
-.Python
-env/
-venv/
-.venv/
-.env
+*.so.*
+*.dylib
 
-# Poetry
-poetry.lock
+# Executables
+*.exe
+*.app
+*.i*86
+*.x86_64
+*.hex
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
 
-# IDE
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Игнорировать файлы, создаваемые macOS
+.DS_Store
+
+# Игнорировать папку с настройками IDEA
 .idea/
 .vscode/
-*.iml
 
-# Data & Models
-data/
-datasets/
-outputs/
-logs/
-checkpoints/
-models/
-*.pth
-*.pt
-*.ckpt
+# Игнорировать файлы, создаваемые pytest
+.pytest_cache/
+__pycache__/
 
-# OS
-.DS_Store
-Thumbs.dbmodels/
-*.pkl
+# Игнорировать файлы с переменными
+.env
+.env.local
