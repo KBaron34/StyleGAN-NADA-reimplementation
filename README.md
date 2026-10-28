@@ -16,11 +16,12 @@
 - Система экспериментов (ablation study) с отключением компонентов
 - Анализ градиентов по слоям, heatmap обучения блоков, diversity
 
-## Ссылки
+## Установка
 
-- [Оригинальная статья](https://arxiv.org/pdf/2108.00946)
-- [Литературный обзор на Habr](https://habr.com/ru/articles/943034/)
+### 1. Клонирование репозитория
 
-## Стек
+Проект использует [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch) как git submodule.
 
-PyTorch, StyleGAN2-ADA, CLIP, LPIPS
+```bash
+git clone --recursive https://github.com/KBaron34/StyleGAN-NADA-reimplementation.git
+cd StyleGAN-NADA-reimplementation

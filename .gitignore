@@ -50,17 +50,37 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Игнорировать файлы, создаваемые macOS
+# macOS
 .DS_Store
 
-# Игнорировать папку с настройками IDEA
+# IDE
 .idea/
 .vscode/
 
-# Игнорировать файлы, создаваемые pytest
+# pytest
 .pytest_cache/
 __pycache__/
 
-# Игнорировать файлы с переменными
+# Env
 .env
 .env.local
+
+# Python
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Данные и результаты проекта
+results/
+StyleGAN2/
+*.pkl
+*.pt
+*.pth
+
+# Артефакты submodule
+stylegan2-ada-pytorch/**/__pycache__/
