@@ -18,7 +18,7 @@ def load_stylegan2_generator(device, ckpt_path: str = "/content/StyleGAN2/ffhq.p
     """
     if ckpt_path is None:
         project_root = Path(__file__).resolve().parent.parent
-        ckpt_path = project_root / "StyleGAN2" / "ffhq.pkl"
+        ckpt_path = project_root / "stylegan2-ada-pytorch" / "ffhq.pkl"
 
     with open(ckpt_path, "rb") as f:
         generator = pickle.load(f)["G_ema"].to(device)
