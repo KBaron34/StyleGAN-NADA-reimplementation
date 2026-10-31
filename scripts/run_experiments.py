@@ -8,6 +8,8 @@ import torch
 # StyleGAN2-ADA подключён как git submodule в корне проекта
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STYLEGAN_PATH = PROJECT_ROOT / "stylegan2-ada-pytorch"
+
+sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.append(str(STYLEGAN_PATH))
 
 os.environ["TORCH_CUDA_ARCH_LIST"] = "7.5"
