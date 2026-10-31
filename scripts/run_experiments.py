@@ -2,6 +2,8 @@ import os
 import sys
 from pathlib import Path
 
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
 import pandas as pd
 import torch
 
