@@ -55,6 +55,7 @@ class TrainConfig:
     experiment_name: str = "baseline"
     save_dir: str = "results"
     load_dir: str = None
+    stylegan_ckpt: str = None
     k: int = 12
     patch_size: int = 32
     num_patches: int = 8
@@ -75,6 +76,8 @@ class TrainConfig:
         """
         Устанавливает значения по умолчанию для списков.
         """
+        if self.stylegan_ckpt is None:
+            self.stylegan_ckpt = "StyleGAN2/ffhq.pkl"
         if self.model_names is None:
             self.model_names = ["ViT-B/16", "ViT-B/32"]
         if self.weights is None:

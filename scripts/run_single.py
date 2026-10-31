@@ -4,16 +4,16 @@ from pathlib import Path
 
 import torch
 
-from configs.config import TrainConfig
-from src.training.trainer import train_generator
-from src.analysis.plots import full_analysis
-
 # StyleGAN2-ADA подключён как git submodule в корне проекта
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 STYLEGAN_PATH = PROJECT_ROOT / "stylegan2-ada-pytorch"
 sys.path.append(str(STYLEGAN_PATH))
 
 os.environ["TORCH_CUDA_ARCH_LIST"] = "7.5"
+
+from configs.config import TrainConfig
+from src.training.trainer import train_generator
+from src.analysis.plots import full_analysis
 
 
 def main():

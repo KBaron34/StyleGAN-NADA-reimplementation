@@ -114,7 +114,7 @@ def train_generator(
 
     # Инициализация генераторов
     print("Загрузка генераторов StyleGAN2...")
-    generator, generator_frozen = load_stylegan2_generator(device=device)
+    generator, generator_frozen = load_stylegan2_generator(device=device, ckpt_path=cfg.stylegan_ckpt)
 
     # Создание латента для генерации визуализации
     latent_sample = torch.randn(cfg.sample_size, generator.z_dim, device=device)
