@@ -1,11 +1,7 @@
 # StyleGAN-NADA Reimplementation
 
-Реимплементация метода редактирования изображений с помощью текста из статьи
+Реимплементация метода редактирования изображений с помощью статьи
 **StyleGAN-NADA: CLIP-Guided Domain Adaptation of Image Generators**.
-
-## Статус
-
-Проект в разработке. Реализован полный цикл обучения, идёт работа над экспериментами.
 
 ## Что реализовано
 
@@ -67,13 +63,14 @@ python scripts/run_experiments.py
 
 ```
 configs/          # TrainConfig, Experiment, список экспериментов
-src/
-  utils/          # текст, изображения, freeze, checkpoint
-  models/         # загрузка StyleGAN2 и CLIP
-  losses/         # directional CLIP loss, регуляризации
-  training/       # слои, оптимизаторы, trainer
-  analysis/       # метрики, графики
+notebooks/          # reimplementation.ipynb
 scripts/          # run_single.py, run_experiments.py
+src/
+  analysis/       # метрики, графики
+  losses/         # directional CLIP loss, регуляризации
+  models/         # загрузка StyleGAN2 и CLIP
+  training/       # слои, оптимизаторы, trainer
+  utils/          # текст, изображения, freeze, checkpoint
 stylegan2-ada-pytorch/   # submodule (NVIDIA)
 ```
 
@@ -81,7 +78,3 @@ stylegan2-ada-pytorch/   # submodule (NVIDIA)
 
 - [Оригинальная статья StyleGAN-NADA](https://arxiv.org/pdf/2108.00946)
 - [Литературный обзор на Habr](https://habr.com/ru/articles/943034/)
-
-## Стек
-
-PyTorch, StyleGAN2-ADA, CLIP, LPIPS
