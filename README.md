@@ -64,6 +64,7 @@ python scripts/run_experiments.py
 ```
 configs/          # TrainConfig, Experiment, список экспериментов
 notebooks/          # reimplementation.ipynb
+results/          # графики, метрики, изображения
 scripts/          # run_single.py, run_experiments.py
 src/
   analysis/       # метрики, графики

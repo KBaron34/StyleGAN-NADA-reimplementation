@@ -76,7 +76,6 @@ env/
 .ipynb_checkpoints/
 
 # Данные и результаты проекта
-results/
 StyleGAN2/
 *.pkl
 *.pt
