@@ -83,3 +83,4 @@ stylegan2-ada-pytorch/   # submodule (NVIDIA)
 
 - [Оригинальная статья StyleGAN-NADA](https://arxiv.org/pdf/2108.00946)
 - [Литературный обзор на Habr](https://habr.com/ru/articles/943034/)
+- [Статья с результатами исследования на Habr](https://habr.com/ru/articles/1105220/)
